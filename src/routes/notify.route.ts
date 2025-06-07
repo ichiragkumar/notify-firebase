@@ -27,11 +27,9 @@ router.post("/send-bulk", async (req, res): Promise<any> => {
   }
 
   const users = await UserModel.find();
-  const tokens = users.map((user) => user.fcmTokens);
+  const tokens = users.flatMap((user) => user.fcmTokens);
 
-
-  //@ts-ignore
-  const response = await messaging.sendEach(
+  const response = await messaging().sendEach(
     tokens.map((token) => ({
       token,
       notification: { title, body },
