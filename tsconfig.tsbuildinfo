@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/config/firebase.ts","./src/config/logger.ts","./src/handlers/fcm-error-handler.ts","./src/routes/notify.route.ts","./src/services/fcm.service.ts"],"version":"5.8.3"}
+{"root":["./src/index.ts","./src/config/db.ts","./src/config/firebase.ts","./src/config/logger.ts","./src/handlers/fcm-error-handler.ts","./src/models/user.model.ts","./src/routes/notify.route.ts","./src/routes/user.route.ts","./src/services/fcm.service.ts"],"version":"5.8.3"}
