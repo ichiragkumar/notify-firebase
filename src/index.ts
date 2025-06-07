@@ -1,8 +1,10 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import notifyRoute from './routes/notify.route';
-
+import { connectToDB } from './config/db';
 dotenv.config();
+
+connectToDB()
 const app = express();
 
 app.use(express.json());
